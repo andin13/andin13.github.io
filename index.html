@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="vendor/js/popper.min.js" async></script>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <script src="vendor/js/bootstrap.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" @media >
+    
+</head>
+<body>
+
+    <header class="fixed-header" style="width: 100%;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3 offset-lg-1 logo">
+                    <a class="a__logo" href="#beginning">
+                        <img src="images/logo.png" alt="piedpiper" class="logo1">
+                        <img src="images/logo-v2.png" alt="piedpiper" class="logo2">
+                    </a>
+                </div>
+                <div class="col-lg-5 col-md-5 offset-lg-2 offset-md-4 menu">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                          <span></span>
+                        </label>
+                        <ul class="menu__box">
+                          <li><a onclick="change_state()" class="menu__item" href="#problem">the problem</a></li>
+                          <p class="p__divider" style="display: inline-block; padding: 0 0.5em;">|</p>
+                          <li><a onclick="change_state()" class="menu__item" href="#coin">PiedPiperCoin</a></li>
+                          <p class="p__divider" style="display: inline-block; padding: 0 0.5em;">|</p>
+                          <li><a onclick="change_state()" class="menu__item" href="#team">team</a></li>
+                        </ul>
+                        <script>
+                            function change_state () {
+                                document.getElementById("menu__toggle").checked = false;
+                            }
+                        </script>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="beginning" style="height: 68px;"></div>
+
+    <div class="container-fluid promo">
+        <div class="row align-items-center justify-content-center" style="height: 15em;">
+            <div class="col-lg-6">
+                <h1>PiperNet Is Here</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="problem" style="position:relative; top:-68px;"></div>
+    <div class="container-fluid theProblem">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6" style="text-align: center;">
+                <h1 style="padding-top: 1.5em;">The Problem</h1>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-6">
+                <p style="padding-bottom: 1.5em;">Beneath the flashy homepages of your favorite sites lurk Hooli™ and other evil corporations out to hoard and sell your most personal data. <br> <br>
+                    What was built to be the ultimate platform for the free sharing of knowledge has turned into a money-hungry monster feasting on our privacy and freedom. <br> <br>
+                    But fear not, for Pied Piper has the answer! And it’s simple:
+                    An autonomous peer-to-peer network featuring distributed storage powered by universal compression, accelerated scheduling allocation, and end-to-end encryption. <br> <br>
+                    Put even simpler — <strong>it’s the internet, completely decentralized.</strong></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid tagline">
+        <div class="row align-items-center justify-content-center" style="height: 25em;">
+            <div class="col-lg-6">
+                <blockquote> <em>We’re in this together!
+                    All of our computers and phones join in
+                     a network to make the strongest supercomputer 
+                     the world has ever seen.</em> </blockquote>
+            </div>
+        </div>
+    </div>
+    <div id="coin" style="position:relative; top:-68px;"></div>
+    <div class="container-fluid intro">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6" style="text-align: center;">
+                <h1 style="padding: 1.5em 0 0.7em 0;">Introducing PiedPiperCoin</h1>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-6">
+                <p>
+                    <img src="images/logo2.png" alt="logo">
+                    Pied Piper's new internet is built for users, by users.
+                    You supply the storage, compute, and networking resources
+                     that power our entire decentralized web.</p>
+                <p style="padding-bottom: 1.5em;">Now there's a way to give credit where credit is due. Compute credit, that is!
+                    The more you share your device resources, the more PiedPiperCoin you receive.
+                    <br><br>
+                    Whether you're a developer with an a
+                    pp ready for market, or just an Average 
+                    Joe with a smartphone you'll love all you can do 
+                    with PiedPiperCoin.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="team" style="position:relative; top:-68px;"></div>
+    <div class="container-fluid team " style="padding: 0 0 3em 0;">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6" style="text-align: center;">
+                <h1 style="padding: 1.5em 0 0.7em 0;">The Team</h1>
+            </div>
+            <div class="w-100"></div>
+  
+                <div class="col-lg-3 col-md-6 col-sm-6 member">
+                    <img src="images/memb1.png" alt="memb1"><br>
+                    <h3>Richard Hendricks</h3><br>
+                    <p><em>Founder & CEO</em></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 member">
+                    <img src="images/memb2.png" alt="memb2"><br>
+                    <h3>Dinesh Chugtai</h3><br>
+                    <p><em>Senior Programmer</em></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 member">
+                    <img src="images/memb3.png" alt="memb3"><br>
+                    <h3>Bertram Gilfoyle</h3><br>
+                    <p><em>Chief Systems Architect</em></p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-lg-3 col-md-6 col-sm-6 member">
+                    <img src="images/memb4.png" alt="memb4">
+                    <h3>Jared Dunn</h3>
+                    <p><em>Chief Operating Officer</em></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 member">
+                    <img src="images/memb5.png" alt="memb5">
+                    <h3>Monica Hall</h3>
+                    <p><em>Chief Financial Officer</em></p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 member">
+                    <img src="images/memb6.png" alt="memb6">
+                    <h3>Nelson Bighetti</h3>
+                    <p><em>Majority Investor</em></p>
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center" style="height: 8em;">
+                <div class="col-lg-6">
+                    <p>All other trademarks and copyrights are the property of their respective owners.
+                        Use of these names, trademarks and brands does not imply endorsement.</p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
